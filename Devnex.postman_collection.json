@@ -1,0 +1,1241 @@
+{
+	"info": {
+		"_postman_id": "36b1bf27-0718-41a3-ba44-5d3d3d36692d",
+		"name": "Devnex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6327472"
+	},
+	"item": [
+		{
+			"name": "Post Authors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Author-4\",\n    \"bio\": \"Author Bio\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/library/authors/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"authors",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Authors Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Author-4\",\n    \"bio\": \"Author Bio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/library/authors/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"authors",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:55:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"name\": \"Author-4\",\n    \"bio\": \"Author Bio\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/authors/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"authors",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Authors Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/authors/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"authors",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:55:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"Author-3\",\n        \"bio\": \"Author Bio\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Author-1\",\n        \"bio\": \"\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Author-4\",\n        \"bio\": \"Author Bio\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/authors/4/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"authors",
+						"4",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Author Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/authors/4/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"authors",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:56:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"Author-3\",\n    \"bio\": \"Author Bio\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Put Author",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Author-4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/library/authors/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"authors",
+						"5",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Put Author Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Author-4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/library/authors/5/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"authors",
+								"5",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:55:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"name\": \"Author-4\",\n    \"bio\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/authors/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"authors",
+						"5",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Author Example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/authors/5/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"authors",
+								"5",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:56:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Post Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Book Title-2\",\n    \"author\": 4,\n    \"isbn\": \"ABC123DEF4561\",\n    \"available_copies\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/library/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"books",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Book Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Book Title-2\",\n    \"author\": 4,\n    \"isbn\": \"ABC123DEF4561\",\n    \"available_copies\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/library/books/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"books",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:57:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"title\": \"Book Title-2\",\n    \"author\": 4,\n    \"author_details\": {\n        \"id\": 4,\n        \"name\": \"Author-3\",\n        \"bio\": \"Author Bio\"\n    },\n    \"isbn\": \"ABC123DEF4561\",\n    \"available_copies\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"books",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Books Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/books/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"books",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:57:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "301"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Book Title-1\",\n        \"author\": 4,\n        \"author_details\": {\n            \"id\": 4,\n            \"name\": \"Author-3\",\n            \"bio\": \"Author Bio\"\n        },\n        \"isbn\": \"ABC123DEF4567\",\n        \"available_copies\": 9\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Book Title-2\",\n        \"author\": 4,\n        \"author_details\": {\n            \"id\": 4,\n            \"name\": \"Author-3\",\n            \"bio\": \"Author Bio\"\n        },\n        \"isbn\": \"ABC123DEF4561\",\n        \"available_copies\": 2\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/books/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"books",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Book Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/books/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"books",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:57:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"title\": \"Book Title-1\",\n    \"author\": 4,\n    \"author_details\": {\n        \"id\": 4,\n        \"name\": \"Author-3\",\n        \"bio\": \"Author Bio\"\n    },\n    \"isbn\": \"ABC123DEF4567\",\n    \"available_copies\": 9\n}"
+				}
+			]
+		},
+		{
+			"name": "Put Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"Book Title 1\",\n        \"isbn\": \"ABC123DEF4568\",\n        \"available_copies\": 10,\n        \"author\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/library/books/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"books",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Put Author Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"Book Title 1\",\n        \"isbn\": \"ABC123DEF4568\",\n        \"available_copies\": 10,\n        \"author\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/library/books/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"books",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:58:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"title\": \"Book Title 1\",\n    \"author\": 4,\n    \"author_details\": {\n        \"id\": 4,\n        \"name\": \"Author-3\",\n        \"bio\": \"Author Bio\"\n    },\n    \"isbn\": \"ABC123DEF4568\",\n    \"available_copies\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "Borrow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book\": 2,\n    \"borrowed_by\": \"User-3\",\n    \"borrow_date\": \"2024-12-18\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/library/borrow/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"borrow",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Borrow Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\": 2,\n    \"borrowed_by\": \"User-3\",\n    \"borrow_date\": \"2024-12-18\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/library/borrow/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"borrow",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 19:59:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 17,\n    \"book\": 2,\n    \"borrowed_by\": \"User-3\",\n    \"borrow_date\": \"2024-12-18\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Return",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/borrow/17/return/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"borrow",
+						"17",
+						"return",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Borrow Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/borrow/17/return/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"borrow",
+								"17",
+								"return",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 20:00:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Book returned successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/reports/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"reports",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Report Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/reports/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"reports",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 20:00:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "100"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_number_of_authors\": 2,\n    \"total_number_of_books\": 2,\n    \"total_number_of_books_currently_borrowed\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/library/reports/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"reports",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Report Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/library/reports/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"library",
+								"reports",
+								""
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Dec 2024 20:00:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Report generation started\"\n}"
+				}
+			]
+		}
+	]
+}
