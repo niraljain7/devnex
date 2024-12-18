@@ -4,7 +4,7 @@ Steps to deploy -
   - cd library-management
   - docker-compose up --build
 
-Swagger is accessible at - http://localhost:8000/swagger/
+Swagger will be accessible at - /swagger/
 
 A postman collection with all requests and samples is added to the repo.
 
