@@ -7,7 +7,8 @@ Steps to deploy -
 Swagger will be accessible at - /swagger/
 
 Admin will be accessible at - /admin/
-admin credentials - username=admin, password=librarian
+
+Admin credentials - username=admin, password=librarian
 
 Docker compose will start django application, celery worker, and redis server.
 A postman collection with all requests and samples is added to the repo.
