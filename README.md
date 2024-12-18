@@ -5,6 +5,7 @@ Steps to deploy -
   - docker-compose up --build
 
 Swagger will be accessible at - /swagger/
+
 Admin will be accessible at - /admin/
 
 Docker compose will start django application, celery worker, and redis server.
