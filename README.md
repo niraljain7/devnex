@@ -1,6 +1,6 @@
 # library-management
 
-Steps to delpoy - 
+Steps to deploy - 
   - cd library-management
   - docker-compose up --build
 
